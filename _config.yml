@@ -6,6 +6,7 @@ paginate: 6
 baseurl: ""
 permalink: pretty
 
+
 # Gems
 plugins:
   - jekyll-gist
@@ -39,3 +40,11 @@ author:
 
 # Custom vars
 version: 3.0.0
+
+# Sizing for header image is set in _variables.scss
+headerimg: assets/images/strange_pixels.png
+headerimg-hover: 
+
+mainnav:
+  - about.md
+  - archive.md

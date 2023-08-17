@@ -1,0 +1,1 @@
+This blog is hosted by [GitHub Pages](https://pages.github.com) using [Jekyll](http://jekyllrb.com). I'm using a slightly customized version of the [Poole theme](https://demo.getpoole.com), originally developed by [@mdo](https://twitter.com/mdo).

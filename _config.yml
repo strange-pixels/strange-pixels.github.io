@@ -1,7 +1,7 @@
 # Setup
 title: Strange Pixels
 tagline: 
-url: https://getpoole.com
+url: http://127.0.0.1:4000
 paginate: 6
 baseurl: ""
 permalink: pretty
@@ -34,17 +34,21 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name: Neal
+  name: Neal Gillis
   url: 
   email: 
 
 # Custom vars
 version: 3.0.0
 
-# Sizing for header image is set in _variables.scss
+# Used instead of site title in masthead
 headerimg: assets/images/strange_pixels.png
-headerimg-hover: 
 
+# Links in the top right main navigation
 mainnav:
-  - about.md
-  - archive.md
+  - title: About
+    url: /about
+  - title: Archive
+    url: /archive
+
+

@@ -8,7 +8,7 @@
       <header class="masthead">
               {% if site.headerimg %}
               <div class="headerimg">
-                <a href="{{ site.baseurl }}/" title="Home"><img src="{{ site.headerimg }}"></a>
+                <a href="{{ site.baseurl }}/" title="Home"><img src="{{ site.baseurl }}/{{ site.headerimg }}"></a>
               </div>
               {% else %}
                 <h3 class="masthead-title">
@@ -17,7 +17,13 @@
               {% endif %}
           <small>{{ site.tagline }}</small>
           <div class="topnav">
-            <a href="/atom.xml"><i class="fa-solid fa-rss"></i></a>
+            <ul>
+            {% for item in site.mainnav %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+            {% endfor %}
+            <li><a href="/atom.xml"><i class="fa-solid fa-rss"></i></a></li>
+            </ul>
+            
           </div>
         
       </header>

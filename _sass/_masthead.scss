@@ -5,6 +5,8 @@
 .masthead {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding-top: var(--spacer-3);
   padding-bottom: var(--spacer);
   margin-bottom: var(--spacer-3);
@@ -12,10 +14,12 @@
 
 .headerimg {
   flex: 1;
+  order: 1;
 }
 
 .masthead-title {
   flex: 1;
+  order: 1;
   margin-bottom: 0;
   font-size: 2.2em;
   color: var(--yellow);
@@ -33,12 +37,14 @@
 
 .topnav {
   flex: 1;
+  order: 2;
   
   a{
-    padding: 12px 0; 
+     
     text-decoration: none;
   }
   ul{
+    padding: 12px 0;
     float: right;
     list-style-type: none;
     margin: 0,;
@@ -52,5 +58,34 @@
 
   
 }
+
+@media (max-width: 768px) {
+  .masthead {
+    flex-direction: column;
+  }
+
+  .headerimg {
+    order: 1; 
+    max-width: 70%;
+  }
+
+  .topnav {
+    order:2;
+    display: flex;
+    margin-top: 0.6em; /* Adjust as needed */
+  }
+
+  .topnav ul {
+    display: flex;
+    list-style-type: none;
+  }
+
+  .topnav li {
+    padding-right: 1.2em;
+  }
+
+
+}
+
 
 
